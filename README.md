@@ -1,5 +1,4 @@
 # Patent Code
-## _The Last Markdown Editor, Ever_
 
 
 ## Reading order
@@ -9,6 +8,7 @@
 - XLNET
 
 ## Some important Notes
+> This notebook doesn't have my model weights. It's in a Google Drive elsewhere.
 > XLNet has a different tokenizer than BERT and Electra. Its CLS token is at the end and all inputs are right padded.
 > The XLNet file has two versions of XLNet. The one I used for ensembling is the base XLNet. Large XLNet is also there because I've tried to train it uncessfully...
 > **Both BERT and XLNet seem to be unstable. Successful training is likely due to lucky learning rates and training data...**
