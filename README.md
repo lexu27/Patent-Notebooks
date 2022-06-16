@@ -19,7 +19,7 @@
 | ------ | ------ |
 | BERT is unstable due to poor training data | Parse all chemical formulas (nacl = Sodium...) May even retrain all models on this new training data|
 | Overfitting to training set| Add special forms of regularization. SMART regularization to emphasize a smooth output mapping, Mixout Dropout, SiFT regularization, AWP Regularization, Adversarial Regularization 😫 |
-| BERT is unstable due to poor output specification | A sigmoid doesn't seem to be good enough. Let's go with ordinal regression: https://arxiv.org/pdf/1901.07884.pdf |
+| ~~BERT is unstable due to poor output specification ~~| ~~A sigmoid doesn't seem to be good enough. Let's go with ordinal regression: https://arxiv.org/pdf/1901.07884.pdf ~~ Model does much worse with Ordinal|
 | Nan losses due to catastrophic forgetting and instability of transformer  | Freeze all layers of the transformer and train the output first. Then gradually unfreeze the top layers.  |
 | I'm doing something wrong with my folds | Try a voting ensemble instead, or retrain all models (hopefully not) |
 | Not enough data | Scour the internet for more training data and look for online labels. Might honestly go train a KMeans network for unsupervised labeling. Will take time, but I've pulled allnighters before|
